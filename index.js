@@ -22,3 +22,8 @@ function unleashDog( a, b){
     return `Unleash ${a} the ${b}`
 }
 
+const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
+
+function exerciseDog(dog, breed) {
+    return routine.map(fn => fn(dog, breed))
+}
